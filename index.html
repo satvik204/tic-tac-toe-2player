@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2P TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h1>Welcome to Tic - Tac - Toe</h1>
+    <div class="board">
+       <div class="row">
+        <div class="square" onclick="sendData(0)"></div>
+        <div class="square" onclick="sendData(1)"></div>
+        <div class="square" onclick="sendData(2)"></div>
+       </div>
+
+       <div class="row">
+        <div class="square" onclick="sendData(3)"></div>
+        <div class="square" onclick="sendData(4)"></div>
+        <div class="square" onclick="sendData(5)"></div>
+       </div>
+
+       
+
+       <div class="row">
+        <div class="square" onclick="sendData(6)"></div>
+        <div class="square" onclick="sendData(7)"></div>
+        <div class="square" onclick="sendData(8)"></div>
+       </div>
+    </div>
+   <div class="line"></div>
+    
+    <div class="result">
+        <h3 class="resultdisplay"></h3>
+        <h3>Score: </h3>
+        <h4>X <span class="xscore">0</span> : <span class="yscore">0</span> O</h4>
+        <h4 class="time" style="display: none;">Next Game in: <span class="timer"></span></h4>
+    </div>
+
+     <button class="restart" onclick="next()">Next Round</button>
+     <button class="restart" onclick="restart()">Restart Game</button>
+   </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
